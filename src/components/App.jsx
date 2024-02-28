@@ -7,15 +7,17 @@ const App = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
   function handleLogin() {
+    
     setIsLogged(true);
     setLoggedIn(true);
   }
 
   return (
     <>
+    <h1>Parent Component</h1>
       <Login isLogged={isLogged} onLogin={handleLogin} />
      
-      <h1>Hello</h1>
+      
     </> 
   )
 }
