@@ -6,12 +6,10 @@ const Login = (props) => {
   const [submitted, setSubmitted] = useState(false);
   function handleSubmit(e) {
     e.preventDefault(); // Prevent the default form submission behavior
-    props.onLogin(); // Call the onLogin function passed from the parent componentcls
+    props.handleLogin(); // Call the onLogin function passed from the parent componentcls
     setSubmitted(true)
   }
-  if (submitted )  {
-    return <p>You are logged in !</p>;
-  }
+  
 
   return (
     <div>
