@@ -15,10 +15,10 @@ const App = () => {
   return (
     <>
     <h1>Parent Component</h1>
-    { !isLogged? 
-      <Login isLogged={isLogged} handleLogin={handleLogin} />: <p>you are loged in</p>
+   
+      <Login isLogged={isLogged} handleLogin={handleLogin} />: 
      
-    }
+    
     </> 
   )
 }
